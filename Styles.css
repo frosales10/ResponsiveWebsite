@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+}
+article {
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+article h2, article p{
+  margin: 0;
+  padding: 20px;
+}
+img:hover{
+
+}
+.one{
+  width: 100%;
+}
+ul{
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #282828;
+  position: fixed;
+  z-index: 1;
+}
+li{
+  float: left;
+}
+li a{
+  font-family: Nanum Gothic, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  display: block;
+  color: white;
+  padding: 24px 24px 24px 26px;
+  text-decoration: none;
+  min-height: 80px;
+}
+li a:hover{
+  background-color: #111;
+}
+h2{
+  font-family: Quicksand, sans-serif;
+}
+p {
+  font-size: 110%;
+  line-height: 1.5;
+  font-family: Work Sans, sans-serif;
+}
+footer {
+  background-color: #373B3A;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+img{
+  max-width: 100%;
+}
+.mig{
+  padding: 0;
+  float: right;
+  margin-right: 10px;
+}
+.imgg{
+  margin-top: 100px
+}
+footer a {
+  color: #282828;
+}
+.container{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container:hover .overlay{
+  opacity: 5;
+}
+.text{
+color: white;
+font-size: 20px;
+font-family: Work Sans, sans-serif;;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+a:link{
+  text-decoration: none;
+  color: royalblue;
+}
+a:visited{
+  color: white;
+}
+a:hover{
+  text-decoration: underline;
+  color: royalblue;
+}
+@media(min-width: 600px) {
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+}
+article{
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+}
+@media(min-width: 1000px){
+.flex{
+  justify-content: space-between;
+}
+article{
+  width: calc(33.33333% - 13.333333px);
+}
+.last{
+  margin-right: auto;
+  margin-left: 20px;
+}
+}
